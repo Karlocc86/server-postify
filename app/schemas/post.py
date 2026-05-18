@@ -13,7 +13,6 @@ class PostCreate(SQLModel):
     users_id: uuid.UUID
 
 
-
 class PostRead(SQLModel):
     id: uuid.UUID
     users_id: uuid.UUID
@@ -24,4 +23,6 @@ class PostUpdate(SQLModel):
     description: str
     users_id: uuid.UUID
 
+class PostDelete(SQLModel):
+    id: uuid.UUID
 

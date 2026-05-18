@@ -20,9 +20,13 @@ class UserRead(SQLModel):
     email: str
     created_at: datetime
 
+
 class UserUpdate(SQLModel):
     username: str
     name: str
     lastname: str
     email: str
     password: str
+
+class UserDelete(SQLModel):
+    id: uuid.UUID
